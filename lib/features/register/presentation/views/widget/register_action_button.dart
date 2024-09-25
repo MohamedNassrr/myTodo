@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:my_todo/core/utils/app_router.dart';
 import 'package:my_todo/core/utils/styles.dart';
 
 class RegisterActionButton extends StatelessWidget {
