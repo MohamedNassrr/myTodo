@@ -6,18 +6,18 @@ class DefaultText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        const Text(
+        Text(
           'Gets things with TODs',
           style: Style.textStyle18,
         ),
-        const SizedBox(
+        SizedBox(
           height: 16,
         ),
         Text(
           'Welcome to myTodo App',
-          style: Style.textStyle13.copyWith(),
+          style: Style.textStyle13,
         ),
       ],
     );

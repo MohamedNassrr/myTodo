@@ -16,7 +16,7 @@ class SplashViewBody extends StatelessWidget {
             padding: const EdgeInsets.only(
               left: 82,
               right: 94,
-              top: 218,
+              top: 140,
             ),
             child: Image.asset(AssetsData.splashImage),
           ),

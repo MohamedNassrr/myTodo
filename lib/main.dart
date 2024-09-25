@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:my_todo/constants.dart';
 import 'package:my_todo/core/utils/app_router.dart';
 import 'package:my_todo/core/utils/bloc_observer.dart';
 
@@ -15,6 +16,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp.router(
       routerConfig: AppRouter.router,
+      theme: ThemeData(
+        scaffoldBackgroundColor: mainBackgroundColor,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: mainBackgroundColor,
+        )
+      ),
       debugShowCheckedModeBanner: false,
     );
   }
