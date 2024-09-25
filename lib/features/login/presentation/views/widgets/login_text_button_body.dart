@@ -13,7 +13,9 @@ class LoginTextButtonBody extends StatelessWidget {
     return Column(
       children: [
         LoginTextButton(
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).push(AppRouter.kResetPassView);
+          },
           textStyling: Style.textStyle13.copyWith(
             color: const Color(0xff50C2C9),
           ),
