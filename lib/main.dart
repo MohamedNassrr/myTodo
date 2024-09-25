@@ -5,6 +5,8 @@ import 'package:my_todo/core/utils/app_router.dart';
 import 'package:my_todo/core/utils/bloc_observer.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
   Bloc.observer = MyBlocObserver();
   runApp(const MyApp());
 }

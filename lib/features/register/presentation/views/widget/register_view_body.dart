@@ -12,16 +12,14 @@ class RegisterViewBody extends StatelessWidget {
           horizontal: 23,
           vertical: 45,
         ),
-        child: Expanded(
-          child: Column(
-            children: [
-              DefaultRegisterText(),
-              SizedBox(
-                height: 90,
-              ),
-              RegisterFormBody(),
-            ],
-          ),
+        child: Column(
+          children: [
+            DefaultRegisterText(),
+            SizedBox(
+              height: 90,
+            ),
+            RegisterFormBody(),
+          ],
         ),
       ),
     );

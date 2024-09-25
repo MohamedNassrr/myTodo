@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:my_todo/core/utils/app_router.dart';
 import 'package:my_todo/core/utils/styles.dart';
 
 class RegisterTextButton extends StatelessWidget {
@@ -14,12 +16,15 @@ class RegisterTextButton extends StatelessWidget {
           style: Style.textStyle16,
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).pushReplacement(
+              AppRouter.kLoginView,
+            );
+          },
           child: Text(
             'Sign in',
             style: Style.textStyle16.copyWith(
               color: const Color(0xff50C2C9),
-
             ),
           ),
         ),

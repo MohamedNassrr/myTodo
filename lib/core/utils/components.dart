@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:my_todo/core/utils/styles.dart';
+
 Widget registerFormField({
   required TextEditingController controller,
   required TextInputType type,
@@ -44,5 +46,31 @@ Widget registerFormField({
           ),
           borderRadius: BorderRadius.circular(100),
         )),
+  );
+}
+
+Widget defaultButton ({
+  required Function() onPressed,
+  required String text,
+  required double width,
+  required double height,
+}){
+  return SizedBox(
+    width: width,
+    height: height,
+    child: TextButton(
+      onPressed: onPressed,
+      style: TextButton.styleFrom(
+        backgroundColor: const Color(0xff50C2C9),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+      ),
+      child: Text(
+        text,
+        style: Style.textStyle18.copyWith(
+          color: Colors.white,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    ),
   );
 }
